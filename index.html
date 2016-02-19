@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASCI PHP Version</title>
+  <link rel="stylesheet" type="text/css" href="asci_style.css">
+  <script type="text/javascript" src="asci.js"></script>
+</head>
+<body>
+  <h1>Unique Email Parser:</h1>
+  <p>Please enter <a href="https://en.wikipedia.org/wiki/Email_address"><strong>valid emails</strong></a> separated by whitespace or use the autofill function:</p>
+  <form name="email_inputs" action="email_parser.php" method="post">
+    <table>
+      <tr>
+        <td>Input: <span class="required">* required field.</span></td>
+      </tr>
+
+      <tr>
+        <td id="textarea-container"><textarea name="userInput" id="user_input" placeholder="email@domain.com" autofocus="true"></textarea></td>
+      </tr>
+
+      <tr>
+        <td id="last-row"><input onclick="return isValid();" type="submit" class="submit-btn" value="Parse Emails"/><button class="autofill-btn" onclick="return autoFillEmails();">Autofill</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
