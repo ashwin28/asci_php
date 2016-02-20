@@ -23,6 +23,7 @@ p {
 }
 .required {
   color: red;
+  float: none !important;
 }
 table {
   display: table;
